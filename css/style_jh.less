@@ -1,0 +1,79 @@
+/*--------------------------------------------------------------------------
+   
+
+	Typefolio
+
+	LESS-based responsive grid system
+
+	0. YUI Library is used for CSS reset (http://yuilibrary.com/yui/docs/cssreset/)
+	1. Body
+	2. Typography
+	3. Page Sections
+		3.1. Topbar
+		3.2. Intro
+		3.3. Resume
+		3.4. Works
+			3.4.1 jQuery Reveal Plugin
+		3.5. Contact / References / Testimonials
+		3.6. Footer
+
+
+--------------------------------------------------------------------------*/
+
+//@import "../../typegrid/typegrid.less";
+// \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ 
+//
+//		0. Less Variables
+//
+// \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ / \ 
+// Less Variables
+// Colors
+@color-primary: #22eedd;
+@color-primary-lighter: lighten( @color-primary, 5%);
+@color-primary-darker: darken( @color-primary, 5%);
+@color-contrast: white;
+// Font family
+@font-sans: "HelveticaNeue",
+"Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif;
+@font-serif: 'Georgia',
+serif;
+
+/*--------------------------------------------------------------------------
+	1. Body
+--------------------------------------------------------------------------*/
+
+html {}
+
+body {
+	color: #333;
+	font-family: @font-sans;
+	font-size: 14px;
+	line-height: 25px;
+	-webkit-font-smoothing: antialiased;
+	/* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+}
+
+.navigation {
+	.logo {
+		float: left
+	}
+	.nav-list {
+		float: right;
+		li {
+			float: left;
+			margin-left: 40px;
+			a {
+				text-decoration: none;
+				color: #999;
+				-webkit-transition: color 0.2s ease-in-out;
+				-moz-transition: color 0.2s ease-in-out;
+				-o-transition: color 0.2s ease-in-out;
+				transition: color 0.2s ease-in-out;
+			}
+		}
+	}
+}
